@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>✦ DarkNPT ☄</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Welcome Popup -->
+    <div class="welcome-popup" id="welcomePopup">
+        <div class="welcome-box">
+            <button class="welcome-close" id="welcomeClose">×</button>
+            <img src="https://i.ibb.co/ymGQzFrV/icon.png" class="welcome-logo" alt="Welcome Logo" id="welcomeLogo">
+            <h1 class="welcome-title" id="welcomeTitle">Welcome To Dark NPT</h1>
+            <p class="welcome-subtitle" id="welcomeSubtitle">Hey, <strong>DarkNPT Bio</strong> pe apka Welcome<br>Please check and visit any option</p>
+        </div>
+    </div>
+    
+    <!-- Floating Balls Background -->
+    <div class="floating-balls" id="floatingBalls"></div>
+    
+    <!-- Main Container -->
+    <div class="container" id="tiltContainer">
+        <div class="profile-section">
+            <img src="https://i.ibb.co/ymGQzFrV/icon.png" alt="Profile Image" class="profile-img" id="profileImg">
+            <h1 class="title" id="mainTitle">DarkNPT ☄</h1>
+            <p class="username" id="usernameText">✈ ᴅᴀʀᴋ ɴᴘᴛ ʙɪᴏ ᴘᴀɢᴇ ✦</p>
+            <p class="bio" id="bioText">•••••••••••••••••••••••••••</p>
+        </div>
+        
+        <div class="buttons" id="buttonsContainer">
+            <!-- Buttons will be loaded from Firebase -->
+        </div>
+        
+        <div class="dev-credit">
+            <a href="https://t.me/DarkNPT" class="dev-btn" target="_blank" id="devLink">ᴅᴇᴠᴇʟᴏᴘᴇʀ</a>
+        </div>
+        
+        <div class="footer" id="footerText">
+            © 2025 DarkNPT ☄| All Rights Reserved
+        </div>
+    </div>
+    
+    <!-- Audio Elements -->
+    <audio id="bgMusic1" loop>
+        <source src="bg1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="bgMusic2" loop>
+        <source src="bg2.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="clickSound">
+        <source src="click.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- Firebase Integration -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
